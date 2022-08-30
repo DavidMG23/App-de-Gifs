@@ -1,0 +1,23 @@
+.Gif {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    border: 1px solid #fff;
+    margin: 1em;
+    border-radius: 10px;
+    min-width: 600px;
+    color: #fff;
+    text-decoration: none;
+}
+.Gif h6 {
+    margin: .5em;
+}
+.Gif small {
+    font-size: .5em;
+    margin-bottom: .5em;
+}
+.Gif img {
+    object-fit: contain;
+}

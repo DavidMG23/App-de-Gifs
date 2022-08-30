@@ -1,0 +1,16 @@
+NOTAS:
+
+userEffect: se ejecuta cada vez que se renderiza el componente
+
+    useEffect(() => {
+      -- codigo --
+    }, []) 
+
+el segundo parámetro de la función (dependencia) es un [] vacio , en este caso useEffect solo se va a ejecutar 1 vez. 
+"SIN ESTO SERIA UN BUCLE INFINITO"
+
+    useEffect(() => {
+      getGifs({ keyword }).then(gifs => setGifs(gifs))
+    }, [keyword]) 
+
+en este ejemplo el useEffect se va a ejecutar cada vez que cambia la keyword
